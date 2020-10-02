@@ -1,197 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ProductReview.us!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ProductReview.us!</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   </head>
+
   <body>
+    <!--- TOPBAR --->
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-start"></div>
+      <div class="navbar-item">
+        <span class="title is-5">Product Review</span>
+      </div>
+      <div class="navbar-item">
+        <a href="">Home</a>
+      </div>
+      <div class="navbar-item">
+        <a href="">Reviews</a>
+      </div>
+      <div class="navbar-item">
 
-  <!--- NAVBAR --->
-  <div class="has-background-dark"><p>
-  </div>
-<div class="has-background-dark">
-  <br />
-<center><h1 class="title has-text-white">PRODUCTREVIEW.US</h1></center>
-</div>
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-
-  <div class="navbar-brand">
-
-
-      </p>
-
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-link">
-              <strong>Reviews by Experts</strong>
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <a aria-haspopup="true" aria-controls="dropdown-menu">Categories
             </a>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">
+                Automotive
+              </a>
+              <a class="dropdown-item">
+                College
+              </a>
+              <a href="#" class="dropdown-item">
+                Home
+              </a>
+              <a href="#" class="dropdown-item">
+                Hobbies
+              </a>
+              <a href="#" class="dropdown-item">
+                Pets
+              </a>
+            </div>
           </div>
         </div>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Shop
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
       </div>
-    </div>
 
-    <!-- <div class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
+        <input class="input is-rounded" type="text" placeholder="Search for your product">
+      </div>
+      <div class="navbar-end"></div>
+    </nav>
+    <!-- JUMBOTRON --->
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-one-fifth"></div>
+            <div class="column">
+              <h1 class="title is-1">
+                Know What You Need,<br />Buy Only <strong>Once</strong>
+              </h1>
+              <h2 class="subtitle">
+                Reviews by Experts
+              </h2>
+              <h1 class="title is-1 has-text-warning">
+                ★★★★★
+              </h1>
+              <button class="button is-large">Get Started</button>
+            </div>
+            <div class="column">
+              <img src="hero-1.png" class="image" style="float:right; width:100%; display:block;"/>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
-  </div>
-</nav>
-<div class="columns">
-
-<div class="column is-three-quarters">
-  <br />
-  <section class="hero is-success is-fullheight is-bold" style="background-image:url('asset/img/main-jumbo.jpg'); background-size:cover;">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Know What You Need
-      </h1>
-      <h2 class="subtitle">
-        Buy Only Once
-      </h2>
-
-      <div class="field">
-  <div class="control">
-    <input class="input" type="text" placeholder="Search">
-  </div>
-</div>
-    </div>
-  </div>
-</section>
-<br />
-  <section>
-<div class="container" style="margin-top:-250px;">
-
-  </div>
-  <div class="tile is-ancestor">
-  <div class="tile is-vertical is-8">
-    <div class="tile">
-      <div class="tile is-parent is-vertical">
-        <article class="tile is-child notification is-primary">
-          <p class="title">Top 5 Pet Supplies You Need</p>
-          <p class="subtitle">Continue Reading →</p>
-        </article>
-        <article class="tile is-child notification is-warning">
-          <p class="title">Summer Wouldn't Be The Same Without This</p>
-          <p class="subtitle">Continue Reading →</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-info">
-          <p class="title">2020 Top Buys</p>
-          <p class="subtitle">Continue Reading →</p>
-          <figure class="image is-4by3">
-            <img src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/YjNkZWY0MjIt/YjNkZWY0MjIt-ZWE2NWNjNDIt-w379._SY304_CB404253081_.jpg">
-          </figure>
-        </article>
-      </div>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-danger">
-        <p class="title">Are You An Informed Buyer?</p>
-        <p class="subtitle">Continue Reading →</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </article>
-    </div>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-success">
-      <div class="content">
-        <p class="title">Top 5 Calculators for Fall</p>
-        <p class="subtitle">Continue Reading →</p>
-        <div class="content">
-          <!-- Content -->
-          <img src="https://images.unsplash.com/photo-1563212034-a3c52118cce2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
-          You did it, you decided to take a couple engineering classes or maybe even declared
-engineering as your major. One thing is now imminent, you are going to take a lot of math
-classes. In recent years companies such as Texas Instruments, Hp, Casio, and many more have
-developed calculators with something called CAS, this stands for Computer Algebra System. If...
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-</div>
     </section>
 
-<div class="column">
-    <aside class="menu">
-      <p>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-2 has-text-centered">Popular</h1>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child box notification is-primary">
+              <h2 class="title is-4 has-text-centered">Top 5 Painting Accessories</h2>
+            </div>
+          </div>
 
-        </p><br />
-  <ul class="menu-list">
+          <div class="tile is-parent">
+            <div class="tile is-child box notification is-primary">
+              <h2 class="title is-4 has-text-centered">Pet Supplies for Your Best Pal</h2>
+            </div>
+          </div>
 
-    <li>
-      <a class="is-active">Categories</a>
-      <ul>
-        <li><a>Automotive</a></li>
-        <li><a>Art</a></li>
-        <li><a>Beauty</a></li>
-        <li><a>Clothing</a></li>
-        <li><a>Digital Media</a></li>
-        <li><a>Electronics</a></li>
-        <li><a>Food</a></li>
-        <li><a>Garden and Outdoor</a></li>
-        <li><a>Household</a></li>
-        <li><a>Industrial and Scientific</a></li>
-        <li><a>Movies and TV</a></li>
-        <li><a>Office Products</a></li>
-        <li><a>Pet Supplies</a></li>
-        <li><a>Tools and Home Improvement</a></li>
-        <li><a>Vehicles</a></li>
-      </ul>
-    </li>
-</aside>
-</div></div>
+          <div class="tile is-parent">
+            <div class="tile is-child box notification is-primary">
+              <h2 class="title is-4 has-text-centered">Best Calculators for Engineering</h2>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+            <div class="tile is-child box notification is-primary">
+              <h2 class="title is-4 has-text-centered">Best Tools for Anxiety</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-2 has-text-centered">Categories</h1>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child box notification has-background-primary-light">
+              <h2 class="title is-4 has-text-centered">College</h2>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+            <div class="tile is-child box notification has-background-primary-light">
+              <h2 class="title is-4 has-text-centered">Home</h2>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+            <div class="tile is-child box notification has-background-primary-light">
+              <h2 class="title is-4 has-text-centered">Outdoor</h2>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+            <div class="tile is-child box notification has-background-primary-light">
+              <h2 class="title is-4 has-text-centered">Hobbies</h2>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+            <div class="tile is-child box notification has-background-primary-light">
+              <h2 class="title is-4 has-text-centered">Automotive</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
+
+<script>
+  var dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', function(event) {
+  event.stopPropagation();
+  dropdown.classList.toggle('is-active');
+});
+</script>
